@@ -7,37 +7,31 @@ class MeaningController
 {
 
     def index = { forward(controller:"meaning", action:"list")}
+
     def list =  {
         log.info "list"
         def trimmed = Meaning.list().collect([]) { ["id":it.id,"text":it.text]}
         log.info trimmed
-
         render trimmed as JSON;
-
     }
 
 
     def create = {
         log.info params;
+        def meaning
         try {
-            Meaning meaning = new Meaning(text:params.text);
+            meaning = new Meaning(text:params.text);
             meaning.save();
         } catch (Exception e) {
            log.info e;
         }
-        forward(controller:"meaning", action:"list")
+        def trimmed = ['id':meaning.id, 'text':meaning.text]
+        render trimmed as JSON
     }
 
     def update = {
-        try  {
-            Meaning meaning = Meaning.get(parmas.id);
-            if (!meaning) {
-               forward (controller:"meaning", action:"create");
-            }
-        } catch (Exception e) {
-            log.info e;
-        }
-
+        def meaning
+        render trimmed as JSON
     }
 
     def delete = {

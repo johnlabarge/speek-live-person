@@ -10,13 +10,18 @@ class PhraseController
 
     def create = {
         log.info(params)
+        def phrase
+        def meaning
         try {
-            Meaning meaning = Meaning.get(params.id);
-            meaning.addToPhrases(new Phrase(text:params.text));
+            meaning = Meaning.get(params.id);
+            phrase = new Phrase(text:params.text)
+            meaning.addToPhrases(phrase)
+
+
         } catch (Exception e) {
            log.info e;
         }
-        forward(controller:'phrase', action:'list')
+        render phrase as JSON
 
     }
 

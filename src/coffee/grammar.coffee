@@ -22,13 +22,16 @@ class window.PhraseList extends Backbone.Collection
      return new Phrase(attributes)
 
    url: =>
-     return "/speek-live-person/phrase/#{id}"
+     return "/speek-live-person/phrase/"
 
   initialize: ->
     console.log this.model
     console.log this.url
     console.log this.meaningId
+
     return this
+
+
 
 class Meaning extends Backbone.Model
 
@@ -36,19 +39,38 @@ class Meaning extends Backbone.Model
      return "/speek-live-person/meaning/#{this.get('id')}" if this.get('id')
      return "/speek-live-person/meaning" #otherwise
 
-  initialize: ->
+  initialize: =>
     console.log 'meaning initializer'
     @set 'text' : 'something meaningful'
     @set 'phrases': new PhraseList
     @get('phrases').meaning = this
     console.log @get('phrases').meaning
+    this.bind('change',this.fetch_success)
 
   createPhrase: (attributes)->
     console.log 'create phrase'
     phrase = new Phrase(attributes)
+    console.log this
     phrase.collection = @get('phrases')
     phrase.set attributes
+    console.log phrase
     @get('phrases').create(phrase)
+
+  fetch_success: ->
+    if (this.fetching)
+       console.log "fetch_sucess"
+       tempPhrases = new PhraseList(@get('phrases'))
+       tempPhrases.meaning = this
+       this.fetching = false
+       @set('phrases',tempPhrases)
+
+    return this
+
+  fetch: (options)->
+    this.fetching = true
+    super options
+
+
 
 
 
