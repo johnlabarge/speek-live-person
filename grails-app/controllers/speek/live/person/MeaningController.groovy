@@ -19,15 +19,21 @@ class MeaningController
     def create = {
         log.info params;
         def meaning
-        try {
-            meaning = new Meaning(text:params.text);
-            meaning.save();
-        } catch (Exception e) {
-           log.info e;
+        def text = text(params)
+        if (validate(text)) {
+            try {
+                meaning = new Meaning(text:params.text);
+                meaning.save();
+            } catch (Exception e) {
+                log.info e;
+            }
+            def trimmed = ['id':meaning.id, 'text':meaning.text]
+            render trimmed as JSON
+        } else {
+          response.sendError(400)
         }
-        def trimmed = ['id':meaning.id, 'text':meaning.text]
-        render trimmed as JSON
     }
+
 
     def update = {
         def meaning
@@ -41,4 +47,6 @@ class MeaningController
 
     }
 
+    def text = { params -> return params.text}
+    def validate = { toCheck ->  return (toCheck && toCheck.trim().length()>0) }
 }

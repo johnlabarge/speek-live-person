@@ -9,19 +9,35 @@ class PhraseController
 
 
     def create = {
-        log.info(params)
         def phrase
         def meaning
-        try {
-            meaning = Meaning.get(params.id);
-            phrase = new Phrase(text:params.text)
-            meaning.addToPhrases(phrase)
+        String text =text(params)
 
-
-        } catch (Exception e) {
-           log.info e;
+        if (validate(text))
+        {
+            try
+            {
+                meaning = Meaning.get(params.id);
+                text = params.text
+                text = text.trim()
+                log.info text.length()
+                phrase = new Phrase(text: text)
+                meaning.addToPhrases(phrase)
+            } catch (Exception e)
+            {
+                log.info e;
+                response.status = 400;
+            }
+            render phrase as JSON
         }
-        render phrase as JSON
+
+        else
+        {
+
+            response.sendError(400)
+
+        }
+
 
     }
 
@@ -56,23 +72,6 @@ class PhraseController
     }
 
 
-
-
-
-
-   def showAjax = {
-
-      def meanings = Meaning.list();
-      [meanings: meanings];
-   }
-
-
-   def deleteMeaning = {
-      def meaning = Meaning.get(params.meaningId);
-      meaning.delete();
-      render(view:"meaningsUpdated");
-   }
-
    def deletePhrase = {
      def phrase = Phrase.get(params.phraseId);
      phrase.meaning.deletePhrase(phrase);
@@ -80,22 +79,6 @@ class PhraseController
      render data as JSON
    }
 
-   def addPhrase = {
-
-       def meaning;
-       if (params.meaningId > 0) {
-
-            meaning = Meaning.get(params.meaningId);
-
-       } else {
-
-           meaning = new Meaning(text:params.meaningText);
-
-       }
-       meaning.addToPhrases(params.phraseText);
-       meaning.save();
-       render(view:"editorUpdated")
-   }
 
    def get = {
 
@@ -108,30 +91,9 @@ class PhraseController
 
    }
 
-   def newMeaning = {
-       log.info "CREATE NEW MEANING: ${params.meaningText}\n"
-       def meaning = new Meaning(text:params.meaningText);
-       meaning.save();
-       Map data  = ["id":meaning.id, "text":meaning.text]
-       render data as JSON;
+   def text = { params -> return params.text}
+   def validate = { toCheck ->  return (toCheck && toCheck.trim().length()>0) }
 
-   }
-
-   def newPhrase = {
-       log.info "ADD NEW PHRASE, ${params.phraseText} TO MEANING ${Meaning.get(params.meaningId).text}"
-       def meaningId = params.meaningId
-       def phraseText = params.phraseText
-
-       def meaning = Meaning.get(meaningId);
-       Phrase phrase = new Phrase(meaning:meaning, text:phraseText);
-       phrase.save();
-       meaning.addToPhrases(phrase);
-       meaning.save();
-
-       Map data = ["id":phrase.id, "text":phrase.text];
-       render data as JSON;
-
-   }
 
 
 }

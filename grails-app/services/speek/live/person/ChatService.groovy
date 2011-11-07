@@ -45,6 +45,7 @@ class ChatService {
         ChatAPIWrapper chatAPI = getChatAPI(chatSessionId, "sending a voice message");
         waitForInChat(chatAPI);
         chatAPI.sendMessage(voiceMessage);
+        skipSentMessage(chatSessionId)
     }
 
     public void closeChatSession(String chatSessionId)
@@ -113,6 +114,13 @@ class ChatService {
          if (!chatAPI.isInChat()) {
              throw new TimeoutWaitingForChatException("Waited ${CHAT_TIMEOUT} seconds for chat to start, but it didn't!");
          }
+    }
+
+    private void skipSentMessage(sessionid) {
+
+        ChatAPIWrapper chatAPI = chatSessions.get(sessionid)
+        chatAPI.getNewMessages(false);
+
     }
 
 }

@@ -4,6 +4,7 @@ class VxmlController
 {
 
     def sessionService
+    def chatService
 
     def index = { }
 
@@ -38,6 +39,13 @@ class VxmlController
 
 
         [message : "starting chat session, please wait"];
+    }
+
+    def voice = {
+        log.info "in voice capture:${params.voiceCapture}\n"
+        def usersMeaning = params.voiceCapture;
+        chatService.deliverVoiceMessage(sessionService.getChatSessionId(params.callerid),usersMeaning)
+        forward(controller:'vxml', action:'hold')
     }
 
     def chatResponse = {
