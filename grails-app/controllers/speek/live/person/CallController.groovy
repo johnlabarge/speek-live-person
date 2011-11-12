@@ -10,7 +10,9 @@ class CallController {
     def participantNumber = "16502833450"
 
     //def eavesDrop = null
-    String eavesDrop = "16502833450"
+   // String eavesDrop = "16502833450"
+    String eavesDrop = null;
+
     def callService
 
 

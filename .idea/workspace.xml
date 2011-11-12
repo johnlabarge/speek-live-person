@@ -17,6 +17,13 @@
     <list default="true" id="7beee6ff-1e6f-4f62-be0a-7ab6ad40eb16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/speek/live/person/CallController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/speek/live/person/CallController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/speek/live/person/MeaningController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/speek/live/person/MeaningController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/services/speek/live/person/CallService.groovy" afterPath="$PROJECT_DIR$/grails-app/services/speek/live/person/CallService.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/vxml/chatResponse.gsp" afterPath="$PROJECT_DIR$/grails-app/views/vxml/chatResponse.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/vxml/hold.gsp" afterPath="$PROJECT_DIR$/grails-app/views/vxml/hold.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/coffee/grammar.coffee" afterPath="$PROJECT_DIR$/src/coffee/grammar.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
     </list>
     <ignored path="speek-live-person.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,97 +83,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CoffeeTagLib.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/coffeescript-1.0-SNAPSHOT/grails-app/taglib/grails/plugins/coffeescript/CoffeeTagLib.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="45" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Phrase.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Phrase.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/com/speek/grammar/Phrase.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="47" selection-start="213" selection-end="213" vertical-scroll-proportion="-5.6666665">
+            <state line="9" column="184" selection-start="163" selection-end="163" vertical-scroll-proportion="0.24725275">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Config.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="58" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.27038628">
+            <state line="75" column="149" selection-start="3095" selection-end="3095" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoffeescriptGrailsPlugin.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/coffeescript-1.0-SNAPSHOT/CoffeescriptGrailsPlugin.groovy">
+      <file leaf-file-name="UrlMappings.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+            <state line="13" column="68" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourcesBootStrap.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/resources-1.0/grails-app/conf/ResourcesBootStrap.groovy">
+      <file leaf-file-name="grammar.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/coffee/grammar.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="6" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
+            <state line="115" column="26" selection-start="2542" selection-end="2542" vertical-scroll-proportion="-13.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceService.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/resources-1.0/grails-app/services/org/grails/plugin/resource/ResourceService.groovy">
+      <file leaf-file-name="grammarEditor.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/css/grammarEditor.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="62" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.0">
+            <state line="246" column="65" selection-start="4247" selection-end="4247" vertical-scroll-proportion="-11.269231">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="MeaningController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/speek/live/person/MeaningController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="59" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
+            <state line="46" column="37" selection-start="1073" selection-end="1073" vertical-scroll-proportion="-16.869566">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataSource.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
+      <file leaf-file-name="CallController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/speek/live/person/CallController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="78" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+            <state line="24" column="41" selection-start="530" selection-end="530" vertical-scroll-proportion="-8.347826">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoffeeScriptController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/coffeescript-1.0-SNAPSHOT/grails-app/controllers/grails/plugins/coffeescript/CoffeeScriptController.groovy">
+      <file leaf-file-name="CallService.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/services/speek/live/person/CallService.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="92" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+            <state line="50" column="56" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editor.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/grammarEditor/editor.gsp">
+      <file leaf-file-name="chatResponse.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/vxml/chatResponse.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="32" selection-start="2239" selection-end="2239" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="535" selection-end="735" vertical-scroll-proportion="-5.106383">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hold.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/vxml/hold.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="46" selection-start="364" selection-end="364" vertical-scroll-proportion="-3.8297873">
               <folding />
             </state>
           </provider>
@@ -191,21 +195,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/com/speek/grammar/Meaning.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/speek/live/person/PhraseController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/speek/live/person/MeaningController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/grammarEditor/editor.gsp" />
-        <option value="$PROJECT_DIR$/web-app/css/grammarEditor.css" />
         <option value="$PROJECT_DIR$/grails-app/controllers/speek/live/person/GrammarController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/vxml/start.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/speek/live/person/VxmlController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/vxml/chatResponse.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/grammar/grxml.gsp" />
         <option value="$PROJECT_DIR$/grails-app/services/speek/live/person/ChatService.groovy" />
         <option value="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" />
         <option value="$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/coffeescript-1.0-SNAPSHOT/grails-app/controllers/grails/plugins/coffeescript/CoffeeScriptController.groovy" />
         <option value="$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/coffeescript-1.0-SNAPSHOT/grails-app/taglib/grails/plugins/coffeescript/CoffeeTagLib.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/speek/live/person/CallController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/services/speek/live/person/CallService.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/vxml/chatResponse.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/vxml/hold.gsp" />
+        <option value="$PROJECT_DIR$/src/coffee/grammar.coffee" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/speek/live/person/MeaningController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       </list>
     </option>
@@ -233,7 +237,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -244,7 +248,85 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vxml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="speek-live-person" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="grails-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -451,17 +533,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="41" width="1969" height="840" extended-state="0" />
+    <frame x="16" y="22" width="1802" height="1139" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328877" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31631058" sideWeight="0.5240642" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31631058" sideWeight="0.5240642" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31631058" sideWeight="0.28781793" order="3" side_tool="true" content_ui="tabs" />
@@ -469,8 +551,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15372589" sideWeight="0.18223867" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5441176" sideWeight="0.99791557" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.168379" sideWeight="0.6112703" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3887297" sideWeight="0.9957447" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47593582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -561,52 +643,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/speek/live/person/VxmlController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="25" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/speek/live/person/ChatService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="76" selection-start="3751" selection-end="3751" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/speek/live/person/ChatController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/vxml/hold.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="53" selection-end="91" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/vxml/start.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="70" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/coffeescript-1.0-SNAPSHOT/grails-app/conf/CoffeeScriptUrlMappings.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/coffeescript-1.0-SNAPSHOT/CoffeescriptGrailsPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/resources-1.0/grails-app/conf/ResourcesBootStrap.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.grails/1.3.7/projects/speek-live-person/plugins/resources-1.0/grails-app/services/org/grails/plugin/resource/ResourceService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="62" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.0">
@@ -652,19 +688,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/speek/grammar/Phrase.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/speek/live/person/CallController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="213" selection-end="213" vertical-scroll-proportion="-5.6666665">
+        <state line="24" column="41" selection-start="530" selection-end="530" vertical-scroll-proportion="-8.347826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/services/speek/live/person/CallService.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="56" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/vxml/chatResponse.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="535" selection-end="735" vertical-scroll-proportion="-5.106383">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/vxml/hold.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="46" selection-start="364" selection-end="364" vertical-scroll-proportion="-3.8297873">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/coffee/grammar.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="26" selection-start="2542" selection-end="2542" vertical-scroll-proportion="-13.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/css/grammarEditor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="246" column="65" selection-start="4247" selection-end="4247" vertical-scroll-proportion="-11.269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/speek/live/person/MeaningController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="37" selection-start="1073" selection-end="1073" vertical-scroll-proportion="-16.869566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/conf/UrlMappings.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="68" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="58" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.27038628">
+        <state line="75" column="149" selection-start="3095" selection-end="3095" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/speek/grammar/Phrase.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="184" selection-start="163" selection-end="163" vertical-scroll-proportion="0.24725275">
           <folding />
         </state>
       </provider>

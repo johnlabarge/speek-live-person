@@ -81,7 +81,7 @@ log4j = {
            'org.codehaus.groovy.grails.web.pages', //  GSP
            'org.codehaus.groovy.grails.web.sitemesh' //  layouts
 
-    debug   'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+    warn   'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
            'org.codehaus.groovy.grails.web.mapping'// URL mapping
 
     error  'org.codehaus.groovy.grails.commons', // core / classloading

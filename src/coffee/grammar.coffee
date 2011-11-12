@@ -51,33 +51,7 @@ class Meaning extends Backbone.Model
   initialize: =>
     console.log 'meaning initializer'
     @set 'text' : 'something meaningful'
-#    @set 'phrases': new PhraseList
- #   @get('phrases').meaning = this
- #   console.log @get('phrases').meaning
- #   this.bind('change',this.fetch_success)
 
-  createPhrase: (attributes)->
-    console.log 'create phrase'
-    phrase = new Phrase(attributes)
-    console.log this
-    phrase.collection = @get('phrases')
-    phrase.set attributes
-    console.log phrase
-    @get('phrases').create(phrase)
-
-  fetch_success: ->
-    if (this.fetching)
-       console.log "fetch_sucess"
-       tempPhrases = new PhraseList(@get('phrases'))
-       tempPhrases.meaning = this
-       this.fetching = false
-       @set('phrases',tempPhrases)
-
-    return this
-
-  fetch: (options)->
-    this.fetching = true
-    super options
 
 
 class Phrase extends Backbone.Model
@@ -99,8 +73,7 @@ class window.MeaningView extends Backbone.View
 
   template: _.template($('#meaningView').html())
   events:
-     "click div.delete"      : "deleteMeaning"
-     "click"                 : "toggleSelected"
+     "click"                    : "toggleSelected"
 
   meaningViews: new Array
 
@@ -126,6 +99,9 @@ class window.MeaningView extends Backbone.View
   render: =>
     $(this.el).html(this.template(this.model.toJSON()))
     $(this.el).addClass("meaningView")
+    #bind events to this view's buttons
+    this.$('.meaningDelete').bind('click',@deleteMeaning)
+
     this.setContent()
     return this
 
@@ -137,6 +113,7 @@ class window.MeaningView extends Backbone.View
    #this.input.val(content);
 
   deleteMeaning: =>
+   alert('delete meaning?')
    this.model.destroy
 
   select: ->
@@ -226,7 +203,6 @@ class window.PhraseView extends Backbone.View
 
   initialize:  =>
     @model.bind 'change', @render
-
     @model.view = @
 
   deletePhrase: (e) =>
@@ -313,5 +289,5 @@ class window.GrammarView extends Backbone.View
 
 console.log 'coffescript loaded'
 window.App = new GrammarView
-window.App.views[0].toggleSelected()
+window.App.views[0].toggleSelected() if window.Appviews[0]
 

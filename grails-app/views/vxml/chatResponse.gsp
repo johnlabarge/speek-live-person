@@ -12,10 +12,10 @@
     </catch>
     <catch event="noinput">
         <block><prompt>no input</prompt></block>
+        <goto next="#hold"/>
     </catch>
     <filled>
         <assign name="voiceCapture" expr="voiceCapture$.interpretation"/>
-    <!-- this shouldn't happen, but just in case -->
         <submit next="/speek-live-person/vxml/voice?callerid=${callerid}" namelist="voiceCapture"/>
     </filled>
   </field>

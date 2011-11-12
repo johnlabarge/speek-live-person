@@ -46,8 +46,7 @@ class CallService
          println "starting speek call..."
          def speekUrl = "http://api.speek.com/calls/callNow"
          def urlparams="?api_key=${apiKey}&format=json&description=vxmlcall&call_name=vxmlcall"
-         urlparams+="&organizer=${dummyNumber}&music_on_hold=1&greeting=1&greeting_method=text&greeting_text=hey"
-         urlparams+="&recording=0&exit_on_leave=1&sound_on_inout=1&rsvp=yes&numbers=${voxeoNumber},${number}${eaves}"
+         urlparams+="&recording=0&exit_on_leave=1&sound_on_inout=1&numbers=${voxeoNumber},${number}${eaves}"
          speekUrl+=urlparams;
          println "using speek url: ${speekUrl}"
          def jsonText = speekUrl.toURL().text;

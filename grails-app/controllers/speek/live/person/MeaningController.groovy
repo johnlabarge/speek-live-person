@@ -41,7 +41,7 @@ class MeaningController
     }
 
     def delete = {
-
+        log.info "Deleting meaning: ${params.id}"
         Meaning meaning = Meaning.get(params.id);
         meaning?.delete();
 
